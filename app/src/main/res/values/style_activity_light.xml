@@ -1,0 +1,8 @@
+<resources>
+    <color name="custom_color_theme">#b0b0ff</color>
+    <style name="ActivityLight" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/custom_color_theme</item>
+        <item name="android:colorBackground">@color/custom_color_theme</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

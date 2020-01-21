@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oleksiisaienko.sherloc2.MainActivity">
+
+    <Button
+        android:id="@+id/buttonChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:background="@drawable/style_button_thief"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="@string/main_button_choose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoMainActivity"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/textViewInfoMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/buttonAboutProgram"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_button_thief"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="@string/activityMainButtonAbout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCounterCrow"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <Button
+        android:id="@+id/buttonTrafficLight"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_button_traffic_light"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="@string/buttonTrafficLightMainActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChoose"
+        app:layout_constraintVertical_bias="0.569" />
+
+    <Button
+        android:id="@+id/buttonCounterCrow"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_button_counter_crow"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="@string/buttonCounterCrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTrafficLight"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <Button
+        android:id="@+id/activityButtonShowMessage"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/mainActivityButtonToast"
+        android:background="@drawable/style_button_counter_crow"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTrafficLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChoose"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <Button
+        android:id="@+id/activityButtonShowMessage2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/mainActivityButtonToast2"
+        android:background="@drawable/style_button_traffic_light"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/activityButtonShowMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChoose"
+        app:layout_constraintVertical_bias="0.785" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
